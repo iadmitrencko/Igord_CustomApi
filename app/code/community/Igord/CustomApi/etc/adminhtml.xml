@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <customapi translate="title" module="customapi">
+            <title>Custom API</title>
+            <sort_order>100</sort_order>
+            <children>
+               <support translate="title" module="customapi">
+                   <title>Contact support</title>
+                   <!-- <action> here need add path to controller action </action> -->
+                   <sort_order>0</sort_order>
+               </support>
+            </children>
+        </customapi>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <customapi translate="title" module="customapi">
+                        <title>Custom API</title>
+                        <sort_order>100</sort_order>
+                        <children>
+                            <support translate="title">
+                                <title>Contact support</title>
+                                <sort_order>0</sort_order>
+                            </support>
+                        </children>
+                    </customapi>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
