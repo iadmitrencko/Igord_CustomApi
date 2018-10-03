@@ -5,4 +5,11 @@
             <version>1.0.0</version>
         </Igord_CustomApi>
     </modules>
+    <global>
+        <helpers>
+            <customapi>
+                <class>Igord_CustomApi_Helper</class>
+            </customapi>
+        </helpers>
+    </global>
 </config>
