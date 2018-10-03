@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config>
+    <modules>
+        <Igord_CustomApi>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Igord_CustomApi>
+    </modules>
+</config>
