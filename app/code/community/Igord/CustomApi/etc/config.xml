@@ -12,4 +12,26 @@
             </customapi>
         </helpers>
     </global>
+    <frontend>
+        <translate>
+            <modules>
+                <Igord_CustomApi>
+                    <files>
+                        <default>Igord_CustomApi.csv</default>
+                    </files>
+                </Igord_CustomApi>
+            </modules>
+        </translate>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Igord_CustomApi>
+                    <files>
+                        <default>Igord_CustomApi.csv</default>
+                    </files>
+                </Igord_CustomApi>
+            </modules>
+        </translate>
+    </adminhtml>
 </config>
