@@ -34,4 +34,9 @@
             </modules>
         </translate>
     </adminhtml>
+    <customapi>
+        <support>
+            <email>customapi@support.com</email>
+        </support>
+    </customapi>
 </config>
