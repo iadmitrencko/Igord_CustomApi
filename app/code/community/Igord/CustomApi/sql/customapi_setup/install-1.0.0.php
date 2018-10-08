@@ -20,9 +20,9 @@ $table = $installer->getConnection()
     ->addColumn('metadata', Varien_Db_Ddl_Table::TYPE_TEXT, 255, array(
         'nullable'  => false
     ), 'Support Request Metadata')
-    ->addColumn('created_at',Varien_Db_Ddl_Table::TYPE_DATETIME,null,array(
+    ->addColumn('created_at',Varien_Db_Ddl_Table::TYPE_DATETIME,null, array(
         'nullable' => false
-    ), 'Suppert Request Create Data');
+    ), 'Support Request Create Data');
 
 $installer->getConnection()->createTable($table);
 $installer->endSetup();
