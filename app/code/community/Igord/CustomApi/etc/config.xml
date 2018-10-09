@@ -59,6 +59,9 @@
     <customapi>
         <support>
             <email>customapi@support.com</email>
+            <clear_old>
+                <days>30</days>
+            </clear_old>
         </support>
     </customapi>
 </config>
