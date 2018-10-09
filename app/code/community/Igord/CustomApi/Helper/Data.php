@@ -2,9 +2,9 @@
 
 class Igord_CustomApi_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    protected $supportEmailPath = "siteblocks/support/email";
+    protected $supportEmailPath = "customapi/support/email";
 
-    protected $supportOldRequestDays = "siteblocks/support/clear_old/days";
+    protected $supportOldRequestDays = "customapi/support/clear_old/days";
 
     public function getSupportEmail()
     {
