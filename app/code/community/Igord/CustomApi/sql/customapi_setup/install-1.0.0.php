@@ -2,7 +2,6 @@
 /** @var Mage_Core_Model_Resource_Setup $installer */
 $installer = $this;
 $installer->startSetup();
-
 $table = $installer->getConnection()
     ->newTable($this->getTable('customapi/support'))
     ->addColumn('request_id',Varien_Db_Ddl_Table::TYPE_INTEGER,null, array(
@@ -26,6 +25,5 @@ $table = $installer->getConnection()
     ->addColumn('created_at',Varien_Db_Ddl_Table::TYPE_DATETIME,null, array(
         'nullable' => false
     ), 'Support Request Create Data');
-
 $installer->getConnection()->createTable($table);
 $installer->endSetup();

@@ -12,7 +12,7 @@
                 <resourceModel>customapi_resource</resourceModel>
             </customapi>
             <customapi_resource>
-                <class>Igord_CustomApi_Resource</class>
+                <class>Igord_CustomApi_Model_Resource</class>
                 <entities>
                     <support>
                         <table>customapi_support_request</table>
@@ -24,6 +24,7 @@
             <customapi_setup>
                 <setup>
                     <module>Igord_CustomApi</module>
+                    <class>Igord_CustomApi_Model_Resource_Setup</class>
                 </setup>
             </customapi_setup>
         </resources>
