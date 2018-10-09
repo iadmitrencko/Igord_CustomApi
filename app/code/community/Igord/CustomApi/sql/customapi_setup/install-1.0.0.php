@@ -11,13 +11,16 @@ $table = $installer->getConnection()
         'nullable' => false,
         'primary'  => true
     ), 'Support Request Id')
+    ->addColumn('name', Varien_Db_Ddl_Table::TYPE_TEXT, 40, array(
+        'nullable'  => false
+    ), 'Support Request Sender Name')
     ->addColumn('email', Varien_Db_Ddl_Table::TYPE_TEXT, 128, array(
         'nullable'  => false
-    ), 'Support Request Email')
-    ->addColumn('request_body', Varien_Db_Ddl_Table::TYPE_TEXT, 1024, array(
+    ), 'Support Request From Email')
+    ->addColumn('request_description', Varien_Db_Ddl_Table::TYPE_TEXT, 1024, array(
         'nullable'  => false
-    ), 'Support Request Body')
-    ->addColumn('metadata', Varien_Db_Ddl_Table::TYPE_TEXT, 255, array(
+    ), 'Support Request Description')
+    ->addColumn('metadata', Varien_Db_Ddl_Table::TYPE_TEXT, 512, array(
         'nullable'  => false
     ), 'Support Request Metadata')
     ->addColumn('created_at',Varien_Db_Ddl_Table::TYPE_DATETIME,null, array(
