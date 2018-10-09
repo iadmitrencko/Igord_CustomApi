@@ -6,6 +6,27 @@
         </Igord_CustomApi>
     </modules>
     <global>
+        <models>
+            <customapi>
+                <class>Igord_CustomApi_Model</class>
+                <resourceModel>customapi_resource</resourceModel>
+            </customapi>
+            <customapi_resource>
+                <class>Igord_CustomApi_Resource</class>
+                <entities>
+                    <support>
+                        <table>customapi_support_request</table>
+                    </support>
+                </entities>
+            </customapi_resource>
+        </models>
+        <resources>
+            <customapi_setup>
+                <setup>
+                    <module>Igord_CustomApi</module>
+                </setup>
+            </customapi_setup>
+        </resources>
         <helpers>
             <customapi>
                 <class>Igord_CustomApi_Helper</class>
