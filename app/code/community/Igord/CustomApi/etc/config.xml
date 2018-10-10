@@ -56,6 +56,18 @@
             </modules>
         </translate>
     </adminhtml>
+    <crontab>
+        <jobs>
+            <customapi_clear_old_support_requests>
+                <schedule>
+                    <cron_expr>0 0 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>customapi/SupportRequest_ClearOldRequestsCron::clear</model>
+                </run>
+            </customapi_clear_old_support_requests>
+        </jobs>
+    </crontab>
     <customapi>
         <support>
             <email>customapi@support.com</email>
