@@ -17,6 +17,9 @@
                     <support>
                         <table>customapi_support_request</table>
                     </support>
+                    <token>
+                        <table>customapi_auth_token</table>
+                    </token>
                 </entities>
             </customapi_resource>
         </models>
@@ -44,6 +47,15 @@
                 </Igord_CustomApi>
             </modules>
         </translate>
+        <routers>
+            <customapi>
+                <use>standard</use>
+                <args>
+                    <module>Igord_CustomApi</module>
+                    <frontName>customapi</frontName>
+                </args>
+            </customapi>
+        </routers>
     </frontend>
     <adminhtml>
         <translate>
