@@ -17,9 +17,6 @@
                     <support>
                         <table>customapi_support_request</table>
                     </support>
-                    <token>
-                        <table>customapi_auth_token</table>
-                    </token>
                 </entities>
             </customapi_resource>
         </models>
@@ -36,6 +33,11 @@
                 <class>Igord_CustomApi_Helper</class>
             </customapi>
         </helpers>
+        <blocks>
+            <customapi>
+                <class>Igord_CustomApi_Block</class>
+            </customapi>
+        </blocks>
     </global>
     <frontend>
         <translate>
@@ -47,15 +49,6 @@
                 </Igord_CustomApi>
             </modules>
         </translate>
-        <routers>
-            <customapi>
-                <use>standard</use>
-                <args>
-                    <module>Igord_CustomApi</module>
-                    <frontName>customapi</frontName>
-                </args>
-            </customapi>
-        </routers>
     </frontend>
     <adminhtml>
         <translate>
@@ -68,6 +61,17 @@
             </modules>
         </translate>
     </adminhtml>
+    <admin>
+        <routers>
+            <customapi>
+                <use>admin</use>
+                <args>
+                    <module>Igord_CustomApi</module>
+                    <frontName>customapi</frontName>
+                </args>
+            </customapi>
+        </routers>
+    </admin>
     <crontab>
         <jobs>
             <customapi_clear_old_support_requests>

@@ -7,7 +7,7 @@
             <children>
                <support translate="title" module="customapi">
                    <title>Contact support</title>
-                   <!-- <action> here need add path to controller action </action> -->
+                   <action>customapi/Adminhtml_Support/index</action>
                    <sort_order>0</sort_order>
                </support>
             </children>
@@ -21,7 +21,7 @@
                         <title>Custom API</title>
                         <sort_order>100</sort_order>
                         <children>
-                            <support translate="title">
+                            <support translate="title" module="customapi">
                                 <title>Contact support</title>
                                 <sort_order>0</sort_order>
                             </support>
