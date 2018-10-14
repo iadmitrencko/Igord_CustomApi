@@ -17,6 +17,9 @@
                     <support>
                         <table>customapi_support_request</table>
                     </support>
+                    <token>
+                        <table>customapi_auth_token</table>
+                    </token>
                 </entities>
             </customapi_resource>
         </models>
