@@ -94,5 +94,17 @@
                 <days>30</days>
             </clear_old>
         </support>
+        <api>
+            <v1>
+                <priceIncrease>
+                    <validators>
+                        <name_1>Validator_Full_Path_Example</name_1>
+                    </validators>
+                    <handler>
+                        <name>Handler_Full_Path_Example</name>
+                    </handler>
+                </priceIncrease>
+            </v1>
+        </api>
     </customapi>
 </config>
